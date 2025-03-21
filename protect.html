@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attention !</title>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; padding: 50px; }
+        .alert { color: red; font-size: 24px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <p class="alert">⚠️ Vous avez cliqué ! Imaginez si c'était un vrai malware…</p>
+    <p>Faites attention aux liens suspects et ne cliquez jamais sans vérifier la source.</p>
+
+    <script>
+        // Envoie une alerte à ton webhook chaque fois que quelqu'un ouvre la page
+        fetch("https://webhook.site/80108846-dd3e-4c23-8ab0-7890d7fee179", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ message: "Quelqu'un a cliqué sur le lien piège !" })
+        });
+    </script>
+</body>
+</html>
