@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zayneb Boudjaoui - Recherche d'alternance Cybersecurite</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #1a1a1a;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(to right, #32488b, #39257b);
+      color: white;
+      padding: 2rem 2rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 20px;
+      background: #6e8ff3;
+      clip-path: polygon(0 100%, 100% 0, 100% 100%);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+    header img.qr {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      width: 200px;
+      height: 200px;
+    }
+    header .lang-btn {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      animation: fadeIn 1.2s ease;
+    }
+    h2 {
+      color: #4b0082;
+      font-size: 2rem;
+      border-left: 4px solid #4b0082;
+      padding-left: 0.5rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 2rem 0;
+      color: #444;
+    }
+    .buttons {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .btn {
+      background-color: #4b0082;
+      color: #ffffff;
+      padding: 0.8rem 1.5rem;
+      margin: 0.5rem;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      display: inline-block;
+    }
+    .btn:hover {
+      background-color: #35005a;
+      transform: scale(1.05);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .skills-section img, .interests-section img {
+      width: 100px;
+      margin: 10px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .skills-section h3, .interests-section h3 {
+      margin-top: 1.5rem;
+      color: #16015c;
+    }
+    .lang-btn img {
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="MyEnglishPage.html" class="lang-btn"><img src="flag-uk.png" alt="English" width="40"></a>
+    <h1>Zayneb Boudjaoui</h1>
+    <p>Disponible pour une alternance en cybersécurité à partir de Septembre 2025</p>
+    <img src="linkedin_code.jpg" alt="QR Code LinkedIn" class="qr">
+  </header>
+
+  <section>
+    <h2>Qui suis-je ?</h2>
+    <ul>
+      <li>Étudiante en école d'Ingénieur - spécialisation Cybersécurité & Systèmes d'Information (SI)</li>
+      <li>Passionnée par la description discrete des systèmes d'information representant des ensembles comlexes</li>
+      <li>Forte d’un parcours mêlant recherches, projets académiques concrets et implication associative</li>
+      <li>Je vise un mastère spécialisé à Télécom Paris - ESSEC.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Compétences techniques</h2>
+    <ul>
+      <li>Linux/Unix, Bash, C, Python, Java</li>
+      <li>Outils : Wireshark, Metasploit, Cisco Packet Tracer, Git, VirtualBox</li>
+      <li>Cryptographie : RSA, AES, SHA-256, HMAC</li>
+      <li>Réseaux (TCP/IP, DNS, LAN/VLAN, SSH, TLS...)</li>
+      <li>Connaissances : Projet, IA, statistiques, reverse engineering</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Soft Skills</h2>
+    <ul>
+      <li>Autonomie, adaptabilité</li>
+      <li>Leadership et travail en équipe</li>
+      <li>Prise de parole en public</li>
+      <li>Rigueur scientifique et curiosité</li>
+    </ul>
+  </section>
+
+  <section class="interests-section">
+    <h2>Centres d'intérêt</h2>
+    <ul>
+      <li>Théâtre (club Omnes Education London)</li>
+      <li>Judo (en club), gymnastique, randonnée</li>
+      <li>Sciences, philosophie, vulgarisation</li>
+      <li>Engagement associatif : Becomtech, ExECE, Science Ouverte</li>
+    </ul>
+    <img src="cyber1.jpg" alt="Cyber Sécurité">
+    <img src="book.jpg" alt="Lecture">
+    <img src="escape.jpg" alt="Escape Game">
+  </section>
+
+  <div class="buttons">
+    <a href="mailto:zayneb.boudjaoui.pro@gmail.com" class="btn"><i class="fas fa-envelope"></i> Me contacter</a>
+    <a href="https://linkedin.com/in/zayneb-boudjaoui" class="btn" target="_blank"><i class="fab fa-linkedin"></i> Voir mon LinkedIn</a>
+  </div>
+
+  <footer>
+    <p>Contact : zayneb.boudjaoui.pro@gmail.com | LinkedIn : linkedin.com/in/zayneb-boudjaoui | GitHub : github.com/zaynebbdj</p>
+  </footer>
+</body>
+</html>
